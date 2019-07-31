@@ -1,0 +1,141 @@
+﻿    body {
+        width:100vw;
+        height:99.99vh;
+        margin:0 auto;
+        overflow:hidden;
+    }
+    #view {
+        width:100%;
+        height:100%;
+        float:left;
+        background-color:white;
+        z-index:0;
+    }
+    #plansza, #check {
+        display: none;
+    }
+    button {
+        position:absolute;
+        width:20vw;
+        height:4vh;
+        font-size:2vw;
+        cursor:pointer;
+        color:white;
+        outline:none;
+        background-color:#f4511e;
+        border:none;
+        border-radius:2vmin;
+        box-shadow: 0 0.5vmin #555;
+        z-index:10;
+        transition-duration:0.3s;
+    }
+    button:hover {
+        background-color:#cc2604;
+        transition-duration:0.5s;
+    }
+    input {
+        position:absolute;
+        width:19.7vw;
+        height:3vh;
+        border-radius:2vmin;
+        border:0;
+        text-align:center;
+        background-color:white;
+        transition-duration:0.2s;
+    }
+    input:focus {
+        background-color:#fff4a5;
+        transition-duration:0.5s;
+    }
+    #user_reg {
+        left:1vw;
+        top:1vh;
+        z-index:10;
+    }
+    #pass_reg {
+        left:1vw;
+        top:5vh;
+        z-index:10;
+    }
+    #rejestruj {
+        left:1vw;
+        top:9vh;
+    }
+    #user_log {
+        right:1vw;
+        top:1vh;
+        z-index:10;
+    }
+    #pass_log {
+        right:1vw;
+        top:5vh;
+        z-index:10;
+    }
+    #loguj {
+        right:1vw;
+        top:9vh;
+    }
+    #bariera {
+        background-color:rgba(128, 128, 128, 0.5);
+        position:absolute;
+        left:0;
+        top:0;
+        width:100vw;
+        height:100vh;
+        z-index:5;
+    }
+    #nickname {
+        position:absolute;
+        left:1vw;
+        bottom:1vh;
+        z-index:10;
+        font-size:2vw;
+        color:white;
+    }
+    #window, #checkChecker {
+        width:50vw;
+        height:18vh;
+        position:absolute;
+        text-align:center;
+        background-color:rgba(255, 216, 0, 0.7);
+        border-bottom-left-radius:6vw;
+        border-bottom-right-radius:6vw;
+        z-index:11;
+        transition-duration:1s;
+    }
+    #window {
+        left:25vw;
+        top:-18vh;
+    }
+    #close {
+        left:15vw;
+        bottom:5vh;
+    }
+    #text, #checkText {
+        letter-spacing:0.4vw;
+        position:relative;
+        top:3.25vh;
+        color:white;
+        font-size:2.5vw;
+    }
+    #szukajGracza {
+        position:absolute;
+        z-index:11;
+        left:33vw;
+        top:45vh;
+        width:33vw;
+        height:10vh;
+        border-radius:10vw;
+        font-size:3vw;
+        display:none;
+    }
+    #checkChecker {
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:0;
+        border-top-left-radius:6vw;
+        border-top-right-radius:6vw;
+        bottom:0;
+        left:25vw;
+        height:10vh;
+        display:none;
+    }

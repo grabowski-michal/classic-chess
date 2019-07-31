@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Classic Chess</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="/Canvas.js"></script>
+    <script src="/Fireplace.js"></script>
+    <script src="/Game.js"></script>
+    <script src="/Main.js"></script>
+    <script src="/Pawn.js"></script>
+    <script src="/Piece.js"></script>
+    <script src="/Net.js"></script>
+    <script src="/Window.js"></script>
+    <script src="/three.js"></script>
+    <script src="/OrbitControls.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/ColladaLoader.js"></script>
+    <script>
+        var net, game, main;
+
+        window.addEventListener("load", function () {
+            net = new Net();
+            game = new Game();
+            main = new Main();
+        })
+    </script>
+</head>
+<body>
+    <div id="view"></div>
+    <div id="bariera"></div>
+    <input id="user_reg" type="text" placeholder="Nazwa użytkownika"/>
+    <input id="pass_reg" type="password" placeholder="Hasło" />
+    <button id="rejestruj">Rejestruj</button>
+    <input id="user_log" type="text" placeholder="Nazwa użytkownika" />
+    <input id="pass_log" type="password" placeholder="Hasło" />
+    <button id="loguj">Loguj</button>
+
+    <div id="window"><div id="text">TEXT</div><button id="close">Zamknij</button></div>
+    <div id="checkChecker"><div id="checkText">TEXT</div></div>
+    <button id="szukajGracza">Szukaj przeciwnika</button>
+</body>
+</html>
