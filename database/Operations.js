@@ -1,10 +1,10 @@
 ﻿module.exports = function () {
-
     var opers = {
 
         InsertOne: function (data) {
-            data.save(function (error, data, dodanych) {
-                console.log("dodano " + data)
+            data.save(function (error, data) {
+                if (error) console.log("error: " + error);
+                console.log(new Date() + "Pomyślnie dodano użytkownika o nazwie " + data.login + ".");
             })
         },
 
@@ -29,22 +29,21 @@
             }).limit(count)
         },
 
-        DeleteByWaitingPlayer: function (Model, waitingPlayer, callback) {
-            Model.remove({ waitingPlayer: waitingPlayer }, function (err, data) {
+        DeleteByWaitingPlayer: function (Model, waitingPlayer) {
+            Model.deleteOne({ waitingPlayer: waitingPlayer }, function (err, data) {
                 if (err) return console.error(err);
             })
         },
 
         DeleteAll: function (Model) {
-            Model.remove(function (err, data) {
+            Model.deleteMany(function (err, data) {
                 if (err) return console.error(err);
             })
         },
 
         DeleteById: function (Model, _id) {
-            Model.remove({ _id: _id }, function (err, data) {
+            Model.deleteOne({ _id: _id }, function (err, data) {
                 if (err) return console.error(err);
-                console.log(data);
             })
         },
 
