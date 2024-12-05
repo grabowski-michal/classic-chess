@@ -20,7 +20,7 @@
   "devDependencies": {
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
-    "mongoose": "^5.13.20",
+    "mongoose": "^6.13.5",
     "nedb": "^1.8.0",
     "qs": "^6.10.1",
     "socketio": "^1.0.0",
